@@ -12,10 +12,9 @@ import signOut from '@/actions/sign-out';
 function AuthComponent() {
     const session = useSession();
     let authContent: React.ReactNode;
-
-    // if (!session.data?.user) {
-    //     return null
-    // }
+    if (session.status == "loading") {
+        return null
+    }
 
 
     if (session.data?.user) {
