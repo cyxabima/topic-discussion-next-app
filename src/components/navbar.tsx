@@ -1,9 +1,8 @@
 import React from 'react'
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import AuthComponent from './auth-component';
 
-function Navbar(): React.ReactNode {
+function Navbar() {
     return (
         <nav className="grid grid-cols-3 h-12 items-center">
             <div className="flex justify-start"><h1 className="text-2xl font-bold">Discuss<span className="text-red-500">.</span></h1></div>
