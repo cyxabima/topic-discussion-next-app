@@ -1,4 +1,5 @@
 import PostList from "@/components/posts/post-list";
+import TopicComponent from "@/components/topic-component";
 import { TopicCreateForm } from "@/components/topic/topic-create-form";
 import { fetchTopPost } from "@/lib/query/post";
 
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <div>
         <TopicCreateForm />
+        <TopicComponent />
       </div>
 
     </div>
