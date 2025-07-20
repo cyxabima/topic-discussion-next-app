@@ -33,7 +33,7 @@ const PostList: React.FC<PostListProps> = async ({ fetchPost }) => {
                             </Link>
                             <CardDescription className='flex items-center justify-between'>
                                 <div className='flex justify-center items-center gap-5'>
-                                    <div className=' flex items-center'>
+                                    <div className=' flex items-center gap-2'>
 
                                         <Avatar className=''>
                                             <AvatarImage src={post.user.image || ""} />

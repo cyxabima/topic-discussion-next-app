@@ -11,6 +11,10 @@ export default function PostDetailSkeleton() {
 
             {/* Content Skeleton */}
             <Skeleton className="h-6 w-full" />
+            <Skeleton className="h-6 w-full" />
+            <Skeleton className="h-6 w-full" />
+            <Skeleton className="h-6 w-full" />
+            <Skeleton className="h-6 w-full" />
             <Skeleton className="h-6 w-5/6" />
 
             {/* Reply Button */}

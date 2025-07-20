@@ -28,7 +28,7 @@ function AuthComponent() {
                     </Avatar>
                 </PopoverTrigger>
                 <PopoverContent>
-                    <div className='bg-gray-50 p-4 rounded flex flex-col'>
+                    <div className='p-4 rounded flex flex-col border bg-white dark:bg-secondary'>
                         <span>{session.data.user.name}</span>
                         <span>{session.data.user.email}</span>
                         <Separator className="my-4" />

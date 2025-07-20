@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
-        <div className="container px-12">
+        <div className="container px-2 sm:px-12">
           <SessionProvider>
             <Navbar />
             <div className="mt-4">

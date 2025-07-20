@@ -13,7 +13,7 @@ const CommentShow = async ({ postId, commentId }: { postId: string; commentId: s
     const children = comments.filter((c) => c.parentId == commentId)
     return (
 
-        <div className='m-4 p-4 border rounded-lg'>
+        <div className='my-4 p-2 md:m-4 sm:p-4 border rounded-lg'>
             <div className='flex gap-3'>
                 <Avatar>
                     <AvatarImage src={comment.user.image || ""} />

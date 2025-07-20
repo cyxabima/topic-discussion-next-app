@@ -10,7 +10,7 @@ import React, { Suspense } from 'react'
 async function PostShowPage({ params }: { params: Promise<{ slug: string, postId: string }> }) {
     const { slug, postId } = await params;
     return (
-        <div className='space-y-3 p-4'>
+        <div className='space-y-3 p-1 sm:p-4'>
             <Link href={`/topics/${slug}`}>
                 <Button variant={'link'}>
                     <ChevronLeft />
@@ -23,7 +23,7 @@ async function PostShowPage({ params }: { params: Promise<{ slug: string, postId
 
                     <PostShow postId={postId} />
 
-                    <CommentCreateForm postId={postId} />
+                    <CommentCreateForm postId={postId} stateOpen />
 
                     <CommentsList postId={postId} />
                 </Suspense>

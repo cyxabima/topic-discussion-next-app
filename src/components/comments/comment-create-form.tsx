@@ -12,7 +12,7 @@ const CommentCreateForm = ({ postId, parentId, stateOpen }: { postId: string; pa
         <div>
             <Button size={'sm'} variant={'link'} onClick={() => setOpen(!open)}>Reply</Button>
             {open &&
-                <form action={action} className='space-y-2' onSubmit={() => setOpen(false)}>
+                <form action={action} className='space-y-2'>
                     <Textarea
                         placeholder='write a comment...'
                         className='bg-gray-100 focus-visible:ring-0'
