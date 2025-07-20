@@ -42,6 +42,12 @@ const createTopic = async (prevState: createTopicFormState, formData: FormData):
 
     let topic: Topic;
     try {
+        const topicExits = await prisma.topic.findUnique({ where: { slug: result.data.name } })
+        if (topicExits) {
+            return {
+                errors: { formError: ["topic already exits"] }
+            }
+        }
 
         topic = await prisma.topic.create({
             data: {

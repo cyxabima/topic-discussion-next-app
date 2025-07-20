@@ -34,12 +34,12 @@ export function TopicCreateForm() {
                         <div className="grid gap-4">
                             <div className="grid gap-3">
                                 <Label htmlFor="name">Name</Label>
-                                <Input id="name" name="name" defaultValue="JavaScript " />
+                                <Input id="name" name="name" />
                             </div>
                             {formState.errors.name && <p className="text-sm text-red-600">{formState.errors.name}</p>}
                             <div className="grid gap-3">
                                 <Label htmlFor="description">Description</Label>
-                                <Textarea id="description" name="description" defaultValue="topic about java script" />
+                                <Textarea id="description" name="description" />
                             </div>
                             {formState.errors.description && <p className="text-sm text-red-600">{formState.errors.description}</p>}
                             {formState.errors.formError && <div className="text-sm bg-red-500 mb-3 p-2 text-white rounded font-semibold">{formState.errors.formError}</div>}
