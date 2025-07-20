@@ -5,7 +5,7 @@ import { fetchTopPost } from "@/lib/query/post";
 export default function Home() {
   return (
     <div className="grid grid-cols-4 p-4">
-      <div className="col-span-3">
+      <div className="col-span-3 p-4">
         <h1 className="text-xl font-semibold"> Top Post</h1>
         <PostList fetchPost={fetchTopPost} />
 

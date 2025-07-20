@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import AuthComponent from './auth-component';
 import SearchComponents from './search';
 import Link from 'next/link';
@@ -12,7 +12,9 @@ function Navbar() {
                 </Link>
             </div>
             <div className="flex justify-center">
-                <SearchComponents />
+                <Suspense>
+                    <SearchComponents />
+                </Suspense>
             </div>
 
             <div className="flex justify-end gap-2">

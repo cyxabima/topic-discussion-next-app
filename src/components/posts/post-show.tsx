@@ -14,7 +14,7 @@ const PostShow: React.FC<PostShowProp> = async ({ postId }) => {
 
     return (
         <div>
-            <div className='font-bold my-2 text-2xl'>{post?.title}</div>
+            <div className='font-bold my-2 text-xl'>{post?.title}</div>
             <div className='border rounded p-4'>{post?.content}</div>
         </div>
     )

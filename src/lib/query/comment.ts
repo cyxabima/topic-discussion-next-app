@@ -1,5 +1,6 @@
 import type { Comment } from "@/generated/prisma"
 import { prisma } from ".."
+import { cache } from "react"
 type CommentType = Comment & {
     user: {
         name: string | null,
@@ -7,7 +8,7 @@ type CommentType = Comment & {
     }
 }
 
-const fetchCommentByPostId = async ({ postId }: { postId: string }): Promise<CommentType[]> => {
+const fetchCommentByPostId = cache(async ({ postId }: { postId: string }): Promise<CommentType[]> => {
     const comment = await prisma.comment.findMany({
         where: {
             postId
@@ -24,6 +25,6 @@ const fetchCommentByPostId = async ({ postId }: { postId: string }): Promise<Com
     });
 
     return comment
-}
+});
 
 export { fetchCommentByPostId }

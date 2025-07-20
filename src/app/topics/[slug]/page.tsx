@@ -20,8 +20,10 @@ const TopicShowPage: React.FC<TopicShowPageProps> = async ({ params }) => {
                         Back to Home
                     </Button>
                 </Link>
-                <h1 className='text-xl font-semibold mb-1'>{slug.toUpperCase()}</h1>
-                <PostList fetchPost={() => fetchPostByTopicSlug(slug)} />
+                <div className='px-4'>
+                    <h1 className='text-xl font-semibold mb-1'>{slug.toUpperCase()}</h1>
+                    <PostList fetchPost={() => fetchPostByTopicSlug(slug)} />
+                </div>
             </div>
             <div>
                 <PostCreateForm slug={slug} />

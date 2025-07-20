@@ -6,7 +6,7 @@ const SearchPage = async ({ searchParams }: { searchParams: Promise<{ term: stri
     const { term } = (await searchParams);
 
     return (
-        <div>
+        <div className='p-8'>
             <h1 className='text-blue-600 font-medium italic'>Search Result for {term} </h1>
             <PostList fetchPost={() => fetchPostBySearch(term)} />
         </div>
