@@ -23,7 +23,9 @@ function Navbar() {
             </div>
             {/* nav bar burger */}
             <div className='flex justify-end sm:hidden'>
-                <MobileNav />
+                <Suspense>
+                    <MobileNav />
+                </Suspense>
             </div>
         </nav>
     )
