@@ -1,7 +1,7 @@
 "use server"
 
 import { auth } from '@/auth';
-import { Post } from '@/generated/prisma';
+import { Post } from '../generated/prisma';
 import { prisma } from '@/lib';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';

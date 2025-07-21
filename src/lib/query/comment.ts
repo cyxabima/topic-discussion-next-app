@@ -1,4 +1,4 @@
-import type { Comment } from "@/generated/prisma"
+import type { Comment } from "../../generated/prisma"
 import { prisma } from ".."
 import { cache } from "react"
 type CommentType = Comment & {

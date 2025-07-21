@@ -1,8 +1,7 @@
 "use server"
 import { auth } from "@/auth";
-import { Topic } from "@/generated/prisma";
+import { Topic } from "../generated/prisma";
 import { prisma } from "@/lib";
-import { error } from "console";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import * as z from "zod";

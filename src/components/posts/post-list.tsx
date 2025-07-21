@@ -14,7 +14,7 @@ const PostList: React.FC<PostListProps> = async ({ fetchPost }) => {
             <Card>
                 <CardHeader>
                     <CardTitle>
-                        "No Post Found"
+                        No Post Found
                     </CardTitle>
                 </CardHeader>
             </Card>

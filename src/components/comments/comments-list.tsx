@@ -5,7 +5,6 @@ import { fetchCommentByPostId } from '@/lib/query/comment'
 const CommentsList = async ({ postId }: { postId: string }) => {
     const comments = await fetchCommentByPostId({ postId });
     const topLevelComment = comments.filter((comment) => comment.parentId == null)
-    console.log(comments)
 
     return (
         <div>

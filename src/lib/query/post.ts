@@ -1,6 +1,5 @@
-import type { Post } from "@/generated/prisma"
+import type { Post } from "../../generated/prisma"
 import { prisma } from ".."
-import { title } from "process"
 
 export type PostWithData = Post & {
     topic: { slug: string },

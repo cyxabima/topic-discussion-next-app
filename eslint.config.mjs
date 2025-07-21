@@ -10,7 +10,25 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  {
+    // ✅ New ESLint flat config "ignores" field
+    ignores: [
+      "node_modules/",
+      ".next/",
+      "dist/",
+      "out/",
+      "src/generated/",
+      "prisma/generated/",
+      "**/__generated__/",
+      ".vercel/",
+      ".netlify/",
+      "*.log",
+      "*.tsbuildinfo",
+      "coverage/",
+      "*.snap",
+    ],
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
-export default eslintConfig;
+export default eslintConfig
